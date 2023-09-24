@@ -2,18 +2,25 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #17181f;
+  background-color: #eff1f3;
   color: #ddd;
 }
 main {
-  max-width: 360px;
+  max-width: 500px;
   margin: 30px auto;
 }
 
 h1 {
   text-align: center;
-  color: #fff;
+  color: #223843;
   margin: 0;
+  font-size: 2.5rem;
+}
+h1 span {
+  font-size: 1rem;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 6px;
 }
 
 form {
@@ -23,14 +30,14 @@ form {
 form input {
   width: 100%;
   background-color: transparent;
-  color: #ddd;
-  border: 2px solid #30313d;
-  padding: 2px 5px;
-  border-radius: 5px;
+  color: #213555;
+  border: 3px solid #30313d;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
 form input[type="datetime-local"] {
-  color: #777;
+  color: #5c5b5b;
 }
 
 form div.basic {
@@ -44,7 +51,7 @@ form button {
   margin-top: 5px;
   border: 0;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   background-color: #ddd;
 }
 
@@ -64,7 +71,8 @@ div.transaction:first-child {
 }
 
 div.transaction div.name {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  color: #213555;
 }
 
 div.transaction div.description {
@@ -75,15 +83,18 @@ div.transaction div.description {
 div.right {
   text-align: right;
 }
+div.price {
+  font-size: 1.3rem;
+}
 
 div.price.green {
-  color: #1c1;
+  color: #0cca4a;
 }
 div.price.red {
-  color: #c11;
+  color: #d72638;
 }
 
 div.transaction div.datetime {
   font-size: 0.7rem;
-  color: #888;
+  color: #888098;
 }
